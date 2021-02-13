@@ -1,4 +1,4 @@
-Simple Toggle Light/Dark Background Mode
+##Simple Toggle Light/Dark Background Mode
 
 ![readme img](./img.png?raw=true "Toggle light/dark mode")
 
