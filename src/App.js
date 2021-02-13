@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
+import "./App.css";
 
 function App() {
+  const [mode, setMode] = React.useState("light");
+  const toggleMode = () => {
+    console.log(mode);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input type="checkbox" className="checkbox" id="checkbox" onChange={toggleMode} />
+      <label for="checkbox" class="label">
+        <FaMoon class="fa-moon" />
+        <FaSun class="fa-sun" />
+        <div class="ball"></div>
+      </label>
     </div>
   );
 }
