@@ -1,5 +1,7 @@
 Simple Toggle Light/Dark Background Mode
 
+![readme img](./img.png?raw=true "Toggle light/dark mode")
+
 ### `yarn start`
 
 Runs the app in the development mode.\
